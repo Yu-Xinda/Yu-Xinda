@@ -3,7 +3,7 @@
 <div class="publications">
 <ol class="bibliography">
 
-{% for link in https://yu-xinda.github.io %}
+{% for link in site.data.publications.main %}
 
 <li>
 <div class="pub-row">
