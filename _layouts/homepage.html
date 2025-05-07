@@ -61,11 +61,11 @@
         
         {% if site.experience %}
         <p style="margin-top: 10px;"><strong>Experience:</strong></p>
-        <ul style="padding-left: 1.2em; margin-top: -5px;">
+        <p style="margin-top: -5px;">
           {% for item in site.experience %}
-          <li>{{ item }}</li>
+            {{ item }}<br>
           {% endfor %}
-        </ul>
+        </p>
         {% endif %}
         
         <br>
