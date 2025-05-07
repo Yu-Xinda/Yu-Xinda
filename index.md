@@ -6,7 +6,7 @@ layout: homepage
 
 I am a graduate student at HZU
 
-## Research Interests
+## Profile
 
 - **Computer Vision:** image recognition, image generation, video captioning
 - **Machine Learning:** meta-learning, incremental learning, transfer learning
