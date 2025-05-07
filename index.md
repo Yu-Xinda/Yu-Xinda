@@ -1,11 +1,6 @@
 ---
 layout: homepage
 ---
-
-## About Me
-
-I am a graduate student at HZU
-
 ## Profile
 
 Hello! I’m Xinda Yu, currently a graduate student at Huzhou University.
