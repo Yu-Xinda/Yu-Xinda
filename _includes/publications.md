@@ -1,5 +1,5 @@
 <h2 style="margin: 2px 0px -10px;">
-  <a href="/html_source_file/publications.html" style="text-decoration: none; color: inherit;">Publications</a>
+  <a href="/publications.html" style="text-decoration: none; color: inherit;">Publications</a>
 </h2>
 <br>
 <div style="font-size: 18px; line-height: 1.6;">
