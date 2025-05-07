@@ -33,15 +33,18 @@ title: Publications
         {% if link.pdf %}
         <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:13px; border: 1px solid #ccc; margin-right: 6px;">PDF</a>
         {% endif %}
+        
+        {% if link.bibtex %}
+        <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:13px; border: 1px solid #ccc; margin-right: 6px;">BibTex</a>
+        {% endif %}
+        
         {% if link.code %}
         <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:13px; border: 1px solid #ccc; margin-right: 6px;">Code</a>
         {% endif %}
         {% if link.page %}
         <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:13px; border: 1px solid #ccc; margin-right: 6px;">Project Page</a>
         {% endif %}
-        {% if link.bibtex %}
-        <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:13px; border: 1px solid #ccc; margin-right: 6px;">BibTex</a>
-        {% endif %}
+
         {% if link.notes %}
         <strong><i style="color:#e74c3c; font-size: 14px;">{{ link.notes }}</i></strong>
         {% endif %}
