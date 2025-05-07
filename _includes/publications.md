@@ -2,7 +2,6 @@
   <a href="/publications.html" style="text-decoration: none; color: inherit;">Publications</a>
 </h2>
 <br>
-</br>
 <div style="font-size: 18px; line-height: 1.6;">
   <p>
     Paper Title, Conference Name, MM/YY
