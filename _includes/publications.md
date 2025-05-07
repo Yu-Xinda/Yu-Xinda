@@ -1,5 +1,5 @@
 <h2 style="margin: 2px 0px -10px;">
-  <a href="/_includes/publications.html" style="text-decoration: none; color: inherit;">Publications</a>
+  <a href="https://yu-xinda.github.io/yu-xinda/_includes/publications.html" style="text-decoration: none; color: inherit;">Publications</a>
 </h2>
 <br>
 
