@@ -49,13 +49,16 @@
         <position style="font-size:1.10rem;">{{ site.position }}</position>
         <br>
         {% endif %}
+        
         {% if site.affiliation %}
         <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
         <br>
         {% endif %}
+        
         {% if site.email %}
         <email>{{ site.email }}</email>
         {% endif %}
+        
         {% if site.experience %}
         <p style="margin-top: 10px;"><strong>Experience:</strong></p>
         <ul style="padding-left: 1.2em; margin-top: -5px;">
@@ -64,6 +67,7 @@
           {% endfor %}
         </ul>
         {% endif %}
+        
         <br>
         <br>
         <div class="social-icons">
