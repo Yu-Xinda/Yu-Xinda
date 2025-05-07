@@ -5,7 +5,7 @@
 
 <div style="font-size: 15px; line-height: 1.6;">
   <p>
-    Paper title, Conference name, MM/YY
+    Paper Title, Conference Name, MM/YY
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
 </div>
