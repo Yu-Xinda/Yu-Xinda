@@ -64,12 +64,10 @@
         {% endif %}        
         
         {% if site.experience %}
-        <p style="margin-top: 10px; text-align: left;"><strong>Experience:</strong></p>
-        <p style="margin-top: -5px;">
+          <p style="margin-top: 10px; text-align: left;"><strong>Experience:</strong></p>
           {% for item in site.experience %}
-            {{ item }}<br>
+            <p style="margin: 0; text-align: left;">{{ item }}</p>
           {% endfor %}
-        </p>
         {% endif %}
         
         <br>
