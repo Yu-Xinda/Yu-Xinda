@@ -3,7 +3,7 @@
 </h2>
 <br>
 
-<div style="font-size: 15px; line-height: 1.6;">
+<div style="font-size: 18px; line-height: 1.6;">
   <p>
     Paper Title, Conference Name, MM/YY
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
