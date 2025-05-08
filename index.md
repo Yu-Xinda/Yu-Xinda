@@ -1,7 +1,7 @@
 ---
 layout: homepage
 ---
-## Profile
+## About Me
 
 Hello! I’m Xinda Yu, currently a graduate student at Huzhou University.
 My research interests lie in the fields of deep learning, action recognition, and object detection.
