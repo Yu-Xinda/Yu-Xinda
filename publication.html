@@ -13,7 +13,6 @@ title: Publications
 <ol class="bibliography" style="padding-left: 0;">
 
 {% for link in site.data.publications.main %}
-
 <li style="list-style: none; margin-bottom: 30px;">
   <div class="pub-row" style="display: flex; flex-wrap: wrap; align-items: stretch; min-height: 180px; background-color: #f8f9fa; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; padding: 20px;">
     
@@ -33,7 +32,7 @@ title: Publications
       </div>
       <div class="author" style="margin-top: 6px;">{{ link.authors }}</div>
       <div class="periodical" style="margin-top: 4px; font-style: italic;">{{ link.conference }}</div>
-      
+
       <!-- 按钮区域 -->
       <div class="links" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 12px;">
         {% if link.abstract %}
@@ -60,16 +59,18 @@ title: Publications
         {% endif %}
       </div>
 
-      <!-- Abstract 和 BibTex 按钮 + 折叠内容 -->
-      <!-- Abstract 内容 -->
+      <!-- 折叠内容区域 -->
+      {% if link.abstract %}
       <div class="abstract-content" style="display: none; margin-top: 12px; background: #eef3f7; padding: 12px; border-radius: 5px; width: 100%;">
         {{ link.abstract }}
       </div>
+      {% endif %}
 
-      <!-- BibTex 内容 -->
+      {% if link.bibtex %}
       <div class="bibtex-content" style="display: none; margin-top: 12px; background: #eef3f7; padding: 12px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; width: 100%;">
         {{ link.bibtex }}
       </div>
+      {% endif %}
     </div>
   </div>
 </li>
@@ -77,38 +78,27 @@ title: Publications
 
 </ol>
 </div>
+
 <script>
-function toggleAbstract(button) {
+function toggleContent(button, type) {
   const container = button.closest('.pub-row');
   const abstractBox = container.querySelector('.abstract-content');
   const bibtexBox = container.querySelector('.bibtex-content');
 
-  // 先关闭 BibTex
-  bibtexBox.style.display = 'none';
-
-  // 切换 Abstract
-  if (abstractBox.style.display === 'none') {
-    abstractBox.style.display = 'block';
-  } else {
-    abstractBox.style.display = 'none';
-  }
-}
-
-function toggleBibtex(button) {
-  const container = button.closest('.pub-row');
-  const abstractBox = container.querySelector('.abstract-content');
-  const bibtexBox = container.querySelector('.bibtex-content');
-
-  // 先关闭 Abstract
-  abstractBox.style.display = 'none';
-
-  // 切换 BibTex
-  if (bibtexBox.style.display === 'none') {
-    bibtexBox.style.display = 'block';
-  } else {
-    bibtexBox.style.display = 'none';
+  if (type === 'abstract') {
+    if (abstractBox.style.display === 'none') {
+      abstractBox.style.display = 'block';
+      if (bibtexBox) bibtexBox.style.display = 'none';
+    } else {
+      abstractBox.style.display = 'none';
+    }
+  } else if (type === 'bibtex') {
+    if (bibtexBox.style.display === 'none') {
+      bibtexBox.style.display = 'block';
+      if (abstractBox) abstractBox.style.display = 'none';
+    } else {
+      bibtexBox.style.display = 'none';
+    }
   }
 }
 </script>
-
-
