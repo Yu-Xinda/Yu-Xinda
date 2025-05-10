@@ -27,35 +27,35 @@ title: Publications
 
     <!-- 论文信息 -->
     <div class="col-sm-9" style="flex: 1;">
-      <div class="title" style="font-weight: 600; font-size: 19px;">
-        <a href="{{ link.pdf }}" style="color: #3498db; text-decoration: none;">{{ link.title }}</a>
+      <div class="title" style="font-weight: 600; font-size: 17px;">
+        <a href="https://yourusername.github.io/yourrepo/assets/papers/{{ link.pdf }}" style="color: #3498db; text-decoration: none;">{{ link.title }}</a>
       </div>
       <div class="author" style="margin-top: 6px;">{{ link.authors }}</div>
       <div class="periodical" style="margin-top: 4px; font-style: italic;">{{ link.conference }}</div>
 
       <!-- 按钮区域 -->
-      <div class="links" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 12px;">
+      <div class="links" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px;">
         {% if link.abstract %}
         <button onclick="toggleContent(this, 'abstract')" 
-                style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
+                style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
           Abstract
         </button>
         {% endif %}
 
         {% if link.bibtex %}
         <button onclick="toggleContent(this, 'bibtex')" 
-                style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
+                style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
           BibTex
         </button>
         {% endif %}
 
         {% if link.pdf %}
-        <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;">PDF</a>
+        <a href="https://yourusername.github.io/yourrepo/assets/papers/{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
+          style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; text-decoration: none;">PDF</a>
         {% endif %}
         {% if link.code %}
         <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;">GitHub</a>
+          style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; text-decoration: none;">GitHub</a>
         {% endif %}
       </div>
 
