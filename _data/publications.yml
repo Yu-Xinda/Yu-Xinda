@@ -1,20 +1,20 @@
 main:
 
-- title: Deep Learning for Image Super-Resolution
-  authors: Jane Doe, John Smith
-  conference: IEEE CVPR 2025
-  pdf: /assets/papers/super_resolution.pdf
-  abstract: >
-    We propose a new generative adversarial network for image super-resolution...
-  bibtex: |
-    @inproceedings{doe2025superres,
-      title={Deep Learning for Image Super-Resolution},
-      author={Doe, Jane and Smith, John},
-      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-      year={2025}
-    }
-  code: https://github.com/janedoe/super-res
-  image: /assets/images/super_res_cover.jpg
+  - title: "Deep Learning for Image Super-Resolution"
+    authors: Jane Doe, John Smith
+    conference: IEEE CVPR 2025
+    pdf: /assets/papers/super_resolution.pdf
+    abstract: >
+      We propose a new generative adversarial network for image super-resolution...
+    bibtex: |
+      @inproceedings{doe2025superres,
+        title={Deep Learning for Image Super-Resolution},
+        author={Doe, Jane and Smith, John},
+        booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+        year={2025}
+      }
+    code: https://github.com/janedoe/super-res
+    image: /assets/images/super_res_cover.jpg
 
   - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
     authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
