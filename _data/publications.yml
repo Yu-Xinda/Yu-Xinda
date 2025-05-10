@@ -2,7 +2,7 @@ main:
 
   - title: "Deep Learning for Image Super-Resolution"
     authors: Jane Doe, John Smith
-    conference: IEEE CVPR 2025
+    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
     pdf: /assets/papers/super_resolution.pdf
     abstract: >
       We propose a new generative adversarial network for image super-resolution...
