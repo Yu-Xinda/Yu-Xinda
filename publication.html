@@ -89,4 +89,18 @@ function toggleContent(button, type) {
 
   if (type === 'abstract') {
     if (abstractBox.style.display === 'none') {
-      abstractBox.style.display =
+      abstractBox.style.display = 'block';
+      if (bibtexBox) bibtexBox.style.display = 'none';
+    } else {
+      abstractBox.style.display = 'none';
+    }
+  } else if (type === 'bibtex') {
+    if (bibtexBox.style.display === 'none') {
+      bibtexBox.style.display = 'block';
+      if (abstractBox) abstractBox.style.display = 'none';
+    } else {
+      bibtexBox.style.display = 'none';
+    }
+  }
+}
+</script>
