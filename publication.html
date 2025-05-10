@@ -61,19 +61,14 @@ title: Publications
       </div>
 
       <!-- Abstract 和 BibTex 按钮 + 折叠内容 -->
-      <div class="links" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 12px;">
-        <button onclick="toggleAbstract(this)" class="btn" style="padding: 5px 12px;">Abstract</button>
-        <button onclick="toggleBibtex(this)" class="btn" style="padding: 5px 12px;">BibTex</button>
+      <!-- Abstract 内容 -->
+      <div class="abstract-content" style="display: none; margin-top: 12px; background: #eef3f7; padding: 12px; border-radius: 5px; width: 100%;">
+        {{ link.abstract }}
+      </div>
 
-        <!-- Abstract 内容 -->
-        <div class="abstract-content" style="display: none; margin-top: 12px; background: #eef3f7; padding: 12px; border-radius: 5px; width: 100%;">
-          {{ link.abstract }}
-        </div>
-
-        <!-- BibTex 内容 -->
-        <div class="bibtex-content" style="display: none; margin-top: 12px; background: #eef3f7; padding: 12px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; width: 100%;">
-          {{ link.bibtex }}
-        </div>
+      <!-- BibTex 内容 -->
+      <div class="bibtex-content" style="display: none; margin-top: 12px; background: #eef3f7; padding: 12px; border-radius: 5px; font-family: monospace; white-space: pre-wrap; width: 100%;">
+        {{ link.bibtex }}
       </div>
     </div>
   </div>
