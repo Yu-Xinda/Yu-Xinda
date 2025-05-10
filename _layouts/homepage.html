@@ -18,7 +18,7 @@
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     {% if site.font == "Sans Serif" %}
@@ -33,6 +33,22 @@
     <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
+    <style>
+      .social-icons a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px;
+      }
+
+      .social-icons i {
+        margin-right: 5px;
+      }
+
+      .social-icons p {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -70,8 +86,12 @@
 
         <!-- Experience -->
         {% if site.experience %}
-          {% for item in site.experience %}
-          {% endfor %}
+          <p>Experience:</p>
+          <ul>
+            {% for item in site.experience %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
         {% endif %}
         
         <br>
