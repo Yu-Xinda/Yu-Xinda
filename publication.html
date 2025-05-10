@@ -7,18 +7,19 @@ title: Publications
   <a style="text-decoration: none; color: inherit;">Publications</a>
 </h2>
 
-<br></br>
-<div class="publications" style="max-width: 900px; margin: auto; font-size: 17px; line-height: 1.6;">
+<br>
+</br>
+<div class="publications" style="max-width: 900px; margin: auto auto 20px auto; font-size: 17px; line-height: 1.6;">
   <ol class="bibliography" style="padding-left: 0;">
 
     {% for link in site.data.publications.main %}
-    <li style="list-style: none; margin-bottom: 30px;">
-      <div class="pub-row" style="display: flex; flex-wrap: wrap; align-items: stretch; min-height: 180px; background-color: #f8f9fa; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 20px;">
-        
+    <li style="list-style: none; margin-bottom: 15px;">
+      <div class="pub-row" style="display: flex; flex-wrap: wrap; align-items: flex-start; min-height: 180px; background-color: #f8f9fa; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; padding: 10px 20px;">
+
         <!-- 图片区域 -->
         <div class="col-sm-3 abbr" style="flex: 0 0 25%; padding-right: 20px;">
           {% if link.image %}
-          <div style="margin-top: 10px; height: 160px; width: 100%; display: flex; align-items: center; justify-content: center;">
+          <div style="position: relative; top: 20px; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;">
             <img src="{{ link.image }}" style="max-height: 100%; max-width: 100%; object-fit: contain; border-radius: 4px;">
           </div>
           {% endif %}
@@ -36,14 +37,14 @@ title: Publications
           <div class="links" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px;">
             {% if link.abstract %}
             <button onclick="toggleContent(this, 'abstract')" 
-                    style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
+              style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
               Abstract
             </button>
             {% endif %}
 
             {% if link.bibtex %}
             <button onclick="toggleContent(this, 'bibtex')" 
-                    style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
+              style="font-size:13px; padding: 4px 10px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
               BibTex
             </button>
             {% endif %}
