@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
-
   </head>
   <body>
     <div class="wrapper">
@@ -50,30 +49,27 @@
 
         <!-- Email -->
         {% if site.email %}
-        <p style="margin-top: 10px; text-align: left;">
+        <p style="margin-top: 10px; text-align: center;">
           <i class="fas fa-envelope"></i> {{ site.email }}
         </p>
         {% endif %}
 
         <!-- University -->
         {% if site.university %}
-        <p style="margin-top: 10px; text-align: left;">
+        <p style="margin-top: 10px; text-align: center;">
           <i class="fas fa-university"></i> {{ site.university }}
         </p>
         {% endif %}
 
         <!-- Location -->
         {% if site.location %}
-        <p style="margin-top: 10px; text-align: left;">
+        <p style="margin-top: 10px; text-align: center;">
           <i class="fas fa-map-marker-alt"></i> {{ site.location }}
         </p>
         {% endif %}
 
         <!-- Experience -->
         {% if site.experience %}
-          <p style="margin-top: 10px; text-align: left;">
-            <i class="fas fa-briefcase"></i>
-          </p>
           {% for item in site.experience %}
           {% endfor %}
         {% endif %}
