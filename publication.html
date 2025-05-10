@@ -36,35 +36,60 @@ title: Publications
       
       <!-- 按钮区域 -->
       <div class="links" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 12px;">
-        {% if link.pdf %}
-        <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;"">Abstract</a>
+        {% if link.abstract %}
+        <button onclick="toggleContent(this, 'abstract')" 
+                style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
+          Abstract
+        </button>
         {% endif %}
+
         {% if link.bibtex %}
-        <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;"">BibTex</a>
+        <button onclick="toggleContent(this, 'bibtex')" 
+                style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px; cursor: pointer;">
+          BibTex
+        </button>
         {% endif %}
+
         {% if link.pdf %}
         <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;"">PDF</a>
+          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;">PDF</a>
         {% endif %}
         {% if link.code %}
         <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;"">GitHub</a>
-        {% endif %}
-        {% if link.page %}
-        <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank"
-          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;"">Project Page</a>
-        {% endif %}
-        {% if link.others %}
-        {{ link.others }}
+          style="font-size:15px; padding: 5px 12px; background-color: #0056b3; color: white; border: none; border-radius: 3px;">GitHub</a>
         {% endif %}
       </div>
+
+      <!-- 折叠内容 -->
+      {% if link.abstract %}
+      <div class="content-box abstract-box" style="display: none; margin-top: 10px; padding: 12px; background-color: #eef2f7; border-left: 4px solid #0056b3; border-radius: 4px;">
+        {{ link.abstract }}
+      </div>
+      {% endif %}
+
+      {% if link.bibtex %}
+      <div class="content-box bibtex-box" style="display: none; margin-top: 10px; padding: 12px; background-color: #f0f0f0; border-left: 4px solid #777; border-radius: 4px; font-family: monospace; white-space: pre-wrap;">
+        {{ link.bibtex }}
+      </div>
+      {% endif %}
     </div>
   </div>
 </li>
-
 {% endfor %}
 
 </ol>
 </div>
+<script>
+  function toggleContent(button, type) {
+    const container = button.closest('.col-sm-9');
+    const box = container.querySelector(`.${type}-box`);
+    if (box.style.display === "none") {
+      box.style.display = "block";
+      button.textContent = `Hide ${type.charAt(0).toUpperCase() + type.slice(1)}`;
+    } else {
+      box.style.display = "none";
+      button.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+    }
+  }
+</script>
+
