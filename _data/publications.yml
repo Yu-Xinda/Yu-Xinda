@@ -25,7 +25,7 @@ main:
     pdf: https://arxiv.org/pdf/2002.10211.pdf
     code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     bibtex: |
-          @inproceedings{liu2020mnemonics,
+        @inproceedings{liu2020mnemonics,
           author = {Liu, Yaoyao and Su, Yuting and Liu, An{-}An and Schiele, Bernt and Sun, Qianru},
           title  = {Mnemonics Training: Multi-Class Incremental Learning without Forgetting},
           booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
