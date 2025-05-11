@@ -94,12 +94,12 @@
 
         <!-- Experience -->
         {% if site.experience %}
-        <p>Experience:</p>
-        <div style="display: block; margin-left: 20px;">
-          {% for item in site.experience %}
-            <p style="margin: 5px 0;">&#8226; {{ item }}</p>
-          {% endfor %}
-        </div>
+          <p style="text-align: left; font-weight: bold;">Experience:</p>
+          <div style="display: block; margin-left: 20px; text-align: left;">
+            {% for item in site.experience %}
+              <p style="margin: 5px 0;">{{ item }}</p>
+            {% endfor %}
+          </div>
         {% endif %}
 
         
