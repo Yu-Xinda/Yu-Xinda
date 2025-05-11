@@ -3,8 +3,6 @@
 </h2>
 <br>
 <div style="font-size: 18px; line-height: 1.6;">
-  <p>
-    - XX年X月X日，XXXX
-    - XX年X月X日，XXXX
-  </p>
+  - XX年X月X日，XXXX<br>
+  - XX年X月X日，XXXX<br>
 </div>
