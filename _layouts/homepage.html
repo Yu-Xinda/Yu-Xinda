@@ -91,13 +91,17 @@
           <!-- Experience -->
           {% if site.experience %}
             <div style="margin-left: 20px; text-align: left;">
-              {% for i in (0..site.experience.size) %}
-                {% if forloop.index0 mod 2 == 0 and site.experience[i] and site.experience[i+1] %}
-                <!-- 时间行 -->
-                <p style="margin: 5px 0;">{{ site.experience[i] }}</p>
-                <!-- 学校行，空两格 -->
-                <p style="margin: 5px 0;">&emsp;&emsp;{{ site.experience[i+1] }}</p>
+              {% assign index = 0 %}
+              {% for item in site.experience %}
+                {% assign mod = index | modulo: 2 %}
+                {% if mod == 0 %}
+                  <!-- time -->
+                  <p style="margin: 5px 0;">{{ item }}</p>
+                {% else %}
+                  <!-- university, with indent -->
+                  <p style="margin: 5px 0;">&emsp;&emsp;{{ item }}</p>
                 {% endif %}
+              {% assign index = index | plus: 1 %}
               {% endfor %}
             </div>
           {% endif %}
