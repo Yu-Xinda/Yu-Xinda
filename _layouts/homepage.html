@@ -64,29 +64,32 @@
         <h1>{{ site.title }}</h1>
 
         <!-- Email -->
-        {% if site.email %}
-        <div style="margin-top: 10px; display: flex; justify-content: center; align-items: left;">
-          <i class="fas fa-envelope" style="margin-right: 8px;"></i>
-          <span style="text-align: center;">{{ site.email }}</span>
-        </div>
-        {% endif %}
+        <!-- 联系信息容器 -->
+        {% if site.email or site.university or site.location %}
+        <div style="margin-top: 10px; display: flex; flex-direction: column; align-items: flex-start;">
+  
+          {% if site.email %}
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+            <span>{{ site.email }}</span>
+          </div>
+          {% endif %}
 
-        <!-- University -->
-        {% if site.university %}
-        <div style="margin-top: 10px; display: flex; justify-content: center; align-items: left;">
-          <i class="fas fa-university" style="margin-right: 8px;"></i>
-          <span style="text-align: center;">{{ site.university }}</span>
-        </div>
-        </p>
-        {% endif %}
+          {% if site.university %}
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <i class="fas fa-university" style="margin-right: 8px;"></i>
+            <span>{{ site.university }}</span>
+          </div>
+          {% endif %}
 
-        <!-- Location -->
-        {% if site.location %}
-        <div style="margin-top: 10px; display: flex; justify-content: center; align-items: left;">
-          <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
-          <span style="text-align: center;">{{ site.university }}</span>
+          {% if site.location %}
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
+            <span>{{ site.location }}</span>
+          </div>
+          {% endif %}
+
         </div>
-        </p>
         {% endif %}
 
         <!-- Experience -->
