@@ -4,13 +4,14 @@
 <br>
 <div style="font-size: 16px; line-height: 1.6; letter-spacing: 0.5px; text-align: justify;">
   <p>
-    - Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan L. Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou, 
-    Deep Learning for Image Super-Resolution, <em>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)</em>, 2023.
+    - Yixiao Zhang, Xinyi Li,Yaoyao Liu*, et al 
+    Deep Learning for Image Super-Resolution, 
+    <em>MICCAI</em>, 2023.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
   <p>
-    - Yaoyao Liu, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun,
-    Mnemonics Training: Multi-Class Incremental Learning without Forgetting, <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020.
+    - Yaoyao Liu, Yuting Su, An-An Liu*, et al
+    Mnemonics Training: Multi-Class Incremental Learning without Forgetting, <em>CVPR</em>, 2020.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
 </div>
