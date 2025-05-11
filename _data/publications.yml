@@ -5,9 +5,7 @@ main:
     conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
     pdf: /Continual Learning for Abdominal Multi-Organ.pdf
     abstract: >
-      The ability to dynamically extend a model to new data and
-      classes is critical for multiple organ and tumor segmentation. However,
-      due to privacy regulations, accessing previous data and annotations can
+      The ability to dynamically extend a model to new data and classes is critical for multiple organ and tumor segmentation. However, due to privacy regulations, accessing previous data and annotations can
       be problematic in the medical domain. This poses a significant barrier
       to preserving the high segmentation accuracy of the old classes when
       learning from new classes because of the catastrophic forgetting problem. In this paper, we first empirically demonstrate that simply using
