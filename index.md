@@ -16,6 +16,7 @@ layout: homepage
 </div>
 
 <div class="section-box">
+  {% include_relative _includes/news.md %}
   ## News  
   - XX年X月X日，XXXX
 </div>
