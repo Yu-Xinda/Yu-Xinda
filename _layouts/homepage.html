@@ -71,18 +71,21 @@
 
         {% if site.university %}
         <p style="margin-top: 10px; text-align: left;">
-          <i class="fas fa-university"></i> {{ site.university }}
+          <i class="fas fa-university">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ site.university }}</p>
+          </i> 
         </p>
         {% endif %}
 
         {% if site.location %}
         <p style="margin-top: 10px; text-align: left;">
-          <i class="fas fa-map-marker-alt"></i> {{ site.location }}
+          <i class="fas fa-map-marker-alt">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ site.location }}</p>
+          </i>
         </p>
         {% endif %}
 
         {% if site.experience %}
-          <p style="margin-top: 10px; text-align: left;"><i class="fas fa-briefcase"></i></p>
           {% for item in site.experience %}
             <p style="margin: 0; text-align: left;">{{ item }}</p>
           {% endfor %}
