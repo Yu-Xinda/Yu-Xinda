@@ -90,24 +90,17 @@
           {% endif %}
           <!-- Experience -->
           {% if site.experience %}
-          <div style="display: flex; flex-direction: column; align-items: flex-start; margin-top: 10px;">
-            <div style="display: flex; align-items: center;">
-              <i class="fas fa-briefcase" style="margin-right: 8px;"></i>
-              <span style="font-weight: bold;">Experience</span>
-            </div>
-            <div style="margin-left: 20px; text-align: left;">
+            <div style="display: grid; grid-template-columns: auto 1fr; row-gap: 5px; column-gap: 20px; margin-top: 10px; padding-left: 24px;">
               {% assign index = 0 %}
               {% for item in site.experience %}
                 {% assign mod = index | modulo: 2 %}
                 {% if mod == 0 %}
-                  <!-- time -->
-                  <p style="margin: 5px 0;">{{ item }}</p>
+                  <div style="text-align: left;">{{ item }}</div>
                 {% else %}
-                  <!-- university, with indent -->
-                  <p style="margin: 5px 0;">&emsp;&emsp;{{ item }}</p>
+                  <div style="text-align: left;">&emsp;&emsp;{{ item }}</div>
                 {% endif %}
-              {% assign index = index | plus: 1 %}
-              {% endfor %}
+                {% assign index = index | plus: 1 %}
+                {% endfor %}
             </div>
           {% endif %}
         </div>
