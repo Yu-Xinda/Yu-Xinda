@@ -3,6 +3,7 @@ layout: homepage
 ---
 
 <div class="section-box">
+  {% include_relative _includes/introduction.md %}
   ## About me
 
   Hello! I’m Xinda Yu, currently a graduate student at Huzhou University.  
