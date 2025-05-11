@@ -20,7 +20,7 @@ main:
       suggest that the proposed design improves the segmentation performance
       of a baseline model on newly-introduced and previously-learned classes
       along the learning trajectory.
-    bibtex: >
+    bibtex: |
       @inproceedings{doe2025superres,
         title={Deep Learning for Image Super-Resolution},
         author={Doe, Jane and Smith, John},
@@ -35,7 +35,12 @@ main:
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     abstract: >
-      We propose a new generative adversarial network for image super-resolution...
+      @inproceedings{liu2020mnemonics,
+        author={Liu, Yaoyao and Su, Yuting and Liu, An{-}An and Schiele, Bernt and Sun, Qianru},
+        title={Mnemonics Training: Multi-Class Incremental Learning without Forgetting},
+        booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        pages={12245--12254},
+        year={2020}
     pdf: https://arxiv.org/pdf/2002.10211.pdf
     code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     bibtex: |
