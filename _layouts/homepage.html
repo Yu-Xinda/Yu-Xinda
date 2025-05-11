@@ -65,9 +65,10 @@
 
         <!-- Email -->
         {% if site.email %}
-        <p style="margin-top: 10px; text-align: center;">
-          <i class="fas fa-envelope"></i> {{ site.email }}
-        </p>
+        <div style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+          <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+          <span style="text-align: center;">{{ site.email }}</span>
+        </div>
         {% endif %}
 
         <!-- University -->
