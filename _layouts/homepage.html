@@ -51,33 +51,37 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
+    <div class="wrapper" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+  
+      <header style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  
+        <!-- 引入图标库 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
         {% if site.avatar %}
-        <a class="image avatar">
-          <img src="{{ site.avatar }}" alt="avatar" />
+        <a class="image avatar" style="margin-bottom: 15px;">
+          <img src="{{ site.avatar }}" alt="avatar" style="width: 100px; height: 100px; border-radius: 50%;" />
         </a>
         {% endif %}
 
         <!-- 网站标题 -->
-        <h1>{{ site.title }}</h1>
+        <h1 style="margin-bottom: 10px; text-align: center;">{{ site.title }}</h1>
 
         {% if site.email %}
-        <p style="margin-top: 10px; text-align: left;">
+        <p style="margin: 5px 0; text-align: center;">
           <i class="fas fa-envelope"></i> {{ site.email }}
         </p>
-        {% endif %}     
+        {% endif %}
 
         {% if site.university %}
-        <p style="margin-top: 10px; text-align: left;">
-          <i class="fas fa-university"></i>&emsp;&nbsp;&nbsp;{{ site.university }}
+        <p style="margin: 5px 0; text-align: center;">
+          <i class="fas fa-university"></i> {{ site.university }}
         </p>
         {% endif %}
 
         {% if site.location %}
-        <p style="margin-top: 10px; text-align: left;">
-          <i class="fas fa-map-marker-alt"></i>&emsp;&nbsp;&nbsp;{{ site.location }}
+        <p style="margin: 5px 0; text-align: center;">
+          <i class="fas fa-map-marker-alt"></i> {{ site.location }}
         </p>
         {% endif %}
 
