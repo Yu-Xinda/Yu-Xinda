@@ -4,9 +4,9 @@
 <br>
 <div style="font-size: 16px; line-height: 1.6;">
   <p>
-    - XX年X月X日，XXXX<br>
+    - XX年X月X日，XXXX
   </p>
   <p>
-    - XX年X月X日，XXXX<br>
+    - XX年X月X日，XXXX
   </p>
 </div>
