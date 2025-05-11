@@ -4,7 +4,7 @@
 <br>
 <div style="font-size: 18px; line-height: 1.6;">
   <p>
-    Paper Title, Conference Name, MM/YY
+    Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan L. Yuille, Yaoyao Liu*, Zongwei Zhou⋆, Deep Learning for Image Super-Resolution, International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2023.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
   <p>
