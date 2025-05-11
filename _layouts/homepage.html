@@ -86,9 +86,16 @@
         {% endif %}
 
         {% if site.experience %}
-          {% for item in site.experience %}
-            <p style="margin: 0; text-align: left;">{{ item }}</p>
-          {% endfor %}
+            {% assign index = 0 %}
+            {% for item in site.experience %}
+                {% assign mod = index | modulo: 2 %}
+                {% if mod == 0 %}
+                  <p style="text-align: left;">{{ item }}</p>
+                {% else %}
+                  <p style="text-align: left;">&emsp;&emsp;{{ item }}</p>
+                {% endif %}
+                {% assign index = index | plus: 1 %}
+                {% endfor %}
         {% endif %}
 
 
