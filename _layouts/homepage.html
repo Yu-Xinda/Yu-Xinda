@@ -91,13 +91,14 @@
 
         <!-- Experience -->
         {% if site.experience %}
-          <p>Experience:</p>
-          <ul>
-            {% for item in site.experience %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
+        <p>Experience:</p>
+        <div style="display: block; margin-left: 20px;">
+          {% for item in site.experience %}
+            <p style="margin: 5px 0;">&#8226; {{ item }}</p>
+          {% endfor %}
+        </div>
         {% endif %}
+
         
         <br>
         <br>
