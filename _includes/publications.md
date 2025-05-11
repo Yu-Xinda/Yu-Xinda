@@ -9,7 +9,8 @@
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
   <p>
-    Author Name, Paper Title, <em>Conference Name</em>, MM/YY
+    - Yaoyao Liu, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun,
+    Mnemonics Training: Multi-Class Incremental Learning without Forgetting, <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
 </div>
