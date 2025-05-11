@@ -4,13 +4,13 @@
 <br>
 <div style="font-size: 16px; line-height: 1.6; letter-spacing: 0.5px; text-align: justify;">
   <p>
-    - Yixiao Zhang, Xinyi Li,Yaoyao Liu*, et al 
+    - Yixiao Zhang, Xinyi Li,Yaoyao Liu*, et al. 
     Deep Learning for Image Super-Resolution, 
     <em>MICCAI</em>, 2023.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
   <p>
-    - Yaoyao Liu, Yuting Su, An-An Liu*, et al
+    - Yaoyao Liu, Yuting Su, An-An Liu*, et al. 
     Mnemonics Training: Multi-Class Incremental Learning without Forgetting, <em>CVPR</em>, 2020.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
