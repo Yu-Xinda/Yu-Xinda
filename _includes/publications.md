@@ -7,4 +7,8 @@
     Paper Title, Conference Name, MM/YY
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
+  <p>
+    Paper Title, Conference Name, MM/YY
+    <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
+  </p>
 </div>
