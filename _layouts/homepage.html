@@ -63,48 +63,31 @@
         <!-- 网站标题 -->
         <h1>{{ site.title }}</h1>
 
-        <!-- Email -->
-        <!-- 联系信息容器 -->
-        {% if site.email or site.university or site.location %}
-        <div style="margin-top: 10px; display: flex; flex-direction: column; align-items: flex-start;">
-  
-          {% if site.email %}
-          <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <i class="fas fa-envelope" style="margin-right: 8px;"></i>
-            <span>{{ site.email }}</span>
-          </div>
-          {% endif %}
+        {% if site.email %}
+        <p style="margin-top: 10px; text-align: left;">
+          <i class="fas fa-envelope"></i> {{ site.email }}
+        </p>
+        {% endif %}     
 
-          {% if site.university %}
-          <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <i class="fas fa-university" style="margin-right: 8px;"></i>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ site.university }}</span>
-          </div>
-          {% endif %}
-
-          {% if site.location %}
-          <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ site.location }}</span>
-          </div>
-          {% endif %}
-          <!-- Experience -->
-          {% if site.experience %}
-            <div style="display: grid; grid-template-columns: auto 1fr; row-gap: 5px; column-gap: 20px; margin-top: 10px; padding-left: 24px;">
-              {% assign index = 0 %}
-              {% for item in site.experience %}
-                {% assign mod = index | modulo: 2 %}
-                {% if mod == 0 %}
-                  <p style="text-align: left;">{{ item }}</p>
-                {% else %}
-                  <p style="text-align: left;">&emsp;&emsp;{{ item }}</p>
-                {% endif %}
-                {% assign index = index | plus: 1 %}
-                {% endfor %}
-            </div>
-          {% endif %}
-        </div>
+        {% if site.university %}
+        <p style="margin-top: 10px; text-align: left;">
+          <i class="fas fa-university"></i> {{ site.university }}
+        </p>
         {% endif %}
+
+        {% if site.location %}
+        <p style="margin-top: 10px; text-align: left;">
+          <i class="fas fa-map-marker-alt"></i> {{ site.location }}
+        </p>
+        {% endif %}
+
+        {% if site.experience %}
+          <p style="margin-top: 10px; text-align: left;"><i class="fas fa-briefcase"></i></p>
+          {% for item in site.experience %}
+            <p style="margin: 0; text-align: left;">{{ item }}</p>
+          {% endfor %}
+        {% endif %}
+
 
         
         <br>
