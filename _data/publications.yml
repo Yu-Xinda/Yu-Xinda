@@ -4,8 +4,24 @@ main:
     authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan L. Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou⋆
     conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
     pdf: /Continual Learning for Abdominal Multi-Organ.pdf
-    abstract: >
-      We propose the Large View Synthesis Model (LVSM), a novel transformer-based approach for scalable and generalizable novel view synthesis from sparse-view inputs. We introduce two architectures: (1) an encoder-decoder LVSM, which encodes input image tokens into a fixed number of 1D latent tokens, functioning as a fully learned scene representation, and decodes novel-view images from them; and (2) a decoder-only LVSM, which directly maps input images to novel-view outputs, completely eliminating intermediate scene representations. Both models bypass the 3D inductive biases used in previous methods -- from 3D representations (e.g., NeRF, 3DGS) to network designs (e.g., epipolar projections, plane sweeps) -- addressing novel view synthesis with a fully data-driven approach. While the encoder-decoder model offers faster inference due to its independent latent representation, the decoder-only LVSM achieves superior quality, scalability, and zero-shot generalization, outperforming previous state-of-the-art methods by 1.5 to 3.5 dB PSNR. Comprehensive evaluations across multiple datasets demonstrate that both LVSM variants achieve state-of-the-art novel view synthesis quality. Notably, our models surpass all previous methods even with reduced computational resources (1-2 GPUs). Please see our website for more details: this https URL ..
+    abstract: |
+      The ability to dynamically extend a model to new data and
+      classes is critical for multiple organ and tumor segmentation. However,
+      due to privacy regulations, accessing previous data and annotations can
+      be problematic in the medical domain. This poses a significant barrier
+      to preserving the high segmentation accuracy of the old classes when
+      learning from new classes because of the catastrophic forgetting problem. In this paper, we first empirically demonstrate that simply using
+      high-quality pseudo labels can fairly mitigate this problem in the setting of organ segmentation. Furthermore, we put forward an innovative architecture designed specifically for continuous organ and tumor
+      segmentation, which incurs minimal computational overhead. Our proposed design involves replacing the conventional output layer with a
+      suite of lightweight, class-specific heads, thereby offering the flexibility
+      to accommodate newly emerging classes. These heads enable independent predictions for newly introduced and previously learned classes,
+      effectively minimizing the impact of new classes on old ones during
+      the course of continual learning. We further propose incorporating Contrastive Language–Image Pretraining (CLIP) embeddings into the organspecific heads. These embeddings encapsulate the semantic information
+      of each class, informed by extensive image-text co-training. The proposed method is evaluated on both in-house and public abdominal CT
+      datasets under organ and tumor segmentation tasks. Empirical results
+      suggest that the proposed design improves the segmentation performance
+      of a baseline model on newly-introduced and previously-learned classes
+      along the learning trajectory.
     bibtex: |
       @inproceedings{doe2025superres,
         title={Deep Learning for Image Super-Resolution},
