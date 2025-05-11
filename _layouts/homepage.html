@@ -86,9 +86,9 @@
             {% for item in site.experience %}
                 {% assign mod = index | modulo: 2 %}
                 {% if mod == 0 %}
-                  <p style="text-align: left; margin-bottom: 1px; ">{{ item }}</p>
+                  <p style="text-align: left; margin-top: 2px; margin-bottom: 1px; ">{{ item }}</p>
                 {% else %}
-                  <p style="text-align: left; margin-top: 1px;">&emsp;&emsp;{{ item }}</p>
+                  <p style="text-align: left; margin-top: 1px; margin-bottom: 2px; ">&emsp;&emsp;{{ item }}</p>
                 {% endif %}
                 {% assign index = index | plus: 1 %}
                 {% endfor %}
