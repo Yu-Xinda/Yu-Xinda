@@ -13,7 +13,3 @@ layout: homepage
 <div class="section-box">
   {% include_relative _includes/news.md %}
 </div>
-
-<div class="section-box">
-  {% include_relative _includes/services.md %}
-</div>
