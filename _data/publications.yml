@@ -20,7 +20,7 @@ main:
       suggest that the proposed design improves the segmentation performance
       of a baseline model on newly-introduced and previously-learned classes
       along the learning trajectory.
-    bibtex: |
+    bibtex: >
       @inproceedings{doe2025superres,
         title={Deep Learning for Image Super-Resolution},
         author={Doe, Jane and Smith, John},
