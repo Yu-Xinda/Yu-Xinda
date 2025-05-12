@@ -14,4 +14,9 @@
     Mnemonics Training: Multi-Class Incremental Learning without Forgetting, <em>CVPR</em>, 2020.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
+  <p style="font-size: 12px; text-align: right; margin-top: 10px;">
+    <a href="/yu-xinda/publication_more.html" style="text-decoration: none; color: #888;">
+      🔺 more
+    </a>
+  </p>
 </div>
