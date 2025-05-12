@@ -9,4 +9,9 @@
   <p>
     - XX年X月X日，XXXX
   </p>
+  <p style="font-size: 16px; text-align: center; margin-top: 15px;">
+    <a href="/yu-xinda/news.html" style="text-decoration: none; color: #888;">
+        -🔺 more -
+    </a>
+  </p>
 </div>
