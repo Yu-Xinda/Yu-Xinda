@@ -11,7 +11,7 @@
   </p>
   <p>
     - Yaoyao Liu, Yuting Su, An-An Liu*, et al. 
-    <strong>Mnemonics Training: Multi-Class Incremental Learning without Forgetting</strong>, <em>CVPR</em>, 2020.
+    <em>Mnemonics Training: Multi-Class Incremental Learning without Forgetting</em>, <em>CVPR</em>, 2020.
     <a href="/assets/files/paper1.pdf" target="_blank">[PDF]</a>
   </p>
   <p>
