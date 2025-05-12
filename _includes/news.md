@@ -9,7 +9,7 @@
   <p>
     - XX年X月X日，XXXX
   </p>
-  <p style="font-size: 16px; text-align: center; position: absolute; bottom: 10px; left: 0; width: 100%; margin: 0;">
+  <p style="font-size: 16px; text-align: center; position: absolute; bottom: 0px; left: 0; width: 100%; margin: 0;">
     <a href="/yu-xinda/news.html" style="text-decoration: underline; color: #888;">
       - 🔺 more -
     </a>
