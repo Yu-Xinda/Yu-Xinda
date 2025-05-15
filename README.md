@@ -78,7 +78,7 @@ index.md用于呈现主页内容，其中分为三大板块内容，introduction
 
 
 
-![1747276258416](C:\Users\余欣达\AppData\Local\Temp\1747276258416.png)
+![1747276258416](./assets/img/README_publication.png)
 
 每块内容修改需要在_data/publication.yaml中修改
 
